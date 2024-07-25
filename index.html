@@ -22,7 +22,7 @@
         .container {
             width: 600px;
             margin: 20px auto;
-            background-color: #000000;
+            background-color: #000000c0;
             color: white;
             padding: 20px;
             border-radius: 8px;
@@ -39,6 +39,8 @@
             font-size: 4rem;
             font-weight: 900;
             color: rgb(255, 255, 255);
+            box-shadow: 0 8px 0px #000000;
+            transition: margin 0.3s ease, font-size 0.3s ease;
         }
 
         h2 {
@@ -52,6 +54,14 @@
             font-weight: 900;
             font-style: italic;
             color: rgb(0, 0, 0);
+            box-shadow: 0 4px 0px #000000;
+            transition: margin 0.3s ease, font-size 1200ms ease;
+        }
+
+        h2:hover {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 2.4rem;
         }
 
         .introduction-title {
@@ -62,12 +72,14 @@
         .section-image {
             width: 100%;
             height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 8px 0px #000000;
         }
 
         .button-link {
             background-color: white;
             color: #db0006;
-            font-size: 20px;
+            font-size: 1.1rem;
             border: 2px solid white;
             padding: 1rem;
             font-family: 'Poppins', sans-serif;
@@ -76,19 +88,23 @@
             border-radius: 40px;
             width: 50%;
             max-width: 220px;
-            transition: background-color 0.3s, border-color 0.3s, color 0.3s, padding 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s, padding 600ms, font-size 1200ms, width 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
             display: flex;
             margin: 3rem auto;
             text-decoration: none;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 8px 0px #000000;
         }
 
         .button-link:hover {
             background-color: #db0006;
             color: white;
+            font-size: 1.4rem;
             border-color: #db0006;
-            padding: 2rem;
+            padding: 2rem 0 2rem 0rem;
+            box-shadow: 0 8px 0px #000000;
+            width:60%;
         }
 
         .left-aligned-button {
@@ -98,12 +114,19 @@
         }
 
         p {
-            line-height: 1.7rem;
-            margin-bottom: 4rem;
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            margin: 1rem 2.5rem 0rem 2.5rem
         }
 
         strong {
-            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 4rem 0 4rem 4rem;
+            font-size: 2.2rem;
+            color: #fedc01;
         }
 
         .benefit-item {
@@ -113,15 +136,14 @@
         }
 
         .benefit-icon {
-            width: 40px;
-            height: 40px;
-            margin-right: 1rem;
+            width: 100px;
+            height: 100px;
+            margin: 0 0 0 3rem;
         }
 
         .contact-buttons {
             display: flex;
             justify-content: space-around;
-            margin-top: 3rem;
         }
 
         .break--line {
@@ -132,8 +154,9 @@
         button {
             margin-top: 3rem;
         }
+
         div {
-            font-family: Poppins, Helvetica, sans-serif!important;
+            font-family: Poppins, Helvetica, sans-serif !important;
             text-align: left !important;
         }
     </style>
@@ -149,75 +172,92 @@
 
         <h2>JOIN OUR WEBINAR</h2>
         <div class="benefit-item">
-            
-            <p>Learn the lasting benefits that having a VITO in your kitchen will provide in our upcoming exclusive webinar for McDonald’s Owners and Operators. Our VITO experts, Sascha and Sina, will be speaking on August 15th from 5 to 6 PM. Don’t miss out on this opportunity to discover the best-kept secret to improving your kitchen's margins. Designed, engineered, and assembled in Germany.</p>
+            <p>Learn the lasting benefits that having a VITO in your kitchen will provide in our upcoming exclusive
+                webinar for McDonald’s Owners and Operators. Our VITO experts, Sascha and Sina, will be speaking on
+                August 15th from 5 to 6 PM. Don’t miss out on this opportunity to discover the best-kept secret to
+                improving your kitchen's margins. Designed, engineered, and assembled in Germany.</p>
         </div>
-        <a href="https://zoom.us/j/1234567890" target="_blank" class="button-link left-aligned-button">Join the Webinar</a>
+        <a href="https://zoom.us/j/1234567890" target="_blank" class="button-link left-aligned-button">ATTEND
+            WEBINAR</a>
 
         <h2>SAVE UP TO 30% IN COSTS</h2>
         <div class="benefit-item">
-            
-            <p>When you filter nightly with VITO, you’ll see significant savings in your most valuable asset at McDonald’s. Your very own liquid gold will see a substantial increase in its lifespan without all the downtime of traditional filtering. Keep your kitchen operational and plug and play the VITO in your fryer. You can continue to fry even while you filter.</p>
+            <p>When you filter nightly with VITO, you’ll see significant savings in your most valuable asset at
+                McDonald’s. Your very own liquid gold will see a substantial increase in its lifespan without all the
+                downtime of traditional filtering. Keep your kitchen operational and plug and play the VITO in your
+                fryer. You can continue to fry even while you filter.</p>
         </div>
-        <a href="https://vitofryfilter.com/#calculator" target="_blank" class="button-link left-aligned-button">Calculate Savings</a>
+        <a href="https://vitofryfilter.com/#calculator" target="_blank" class="button-link left-aligned-button">CHECK
+            SAVINGS</a>
 
         <h2>THE BENEFITS OF VITO</h2>
         <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/gjf/yyx/b35/icons-5.png" alt="Quality Icon" class="benefit-icon">
-            <strong>Improve the Quality of Fried Foods</strong>
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/gjf/yyx/b35/icons-5.png"
+                alt="Quality Icon" class="benefit-icon">
+            <strong>IMPROVE THE QUALITY OF FRIED FOOD</strong>
         </div>
         <p>Enhance the crispiness and taste of your fried foods with VITO's advanced filtration.</p>
 
         <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/2lb/9ri/d9c/icons-6.png" alt="Chemical-Free Icon" class="benefit-icon">
-            <strong>Filter Mechanically Without Chemicals</strong>
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/2lb/9ri/d9c/icons-6.png"
+                alt="Chemical-Free Icon" class="benefit-icon">
+            <strong>FILTER MECHANICALLY WITHOUT CHEMICALS</strong>
         </div>
         <p>VITO filters mechanically, eliminating the need for chemicals in your oil filtration process.</p>
 
         <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/iro/sfy/aim/icons-7.png" alt="Sustainability Icon" class="benefit-icon">
-            <strong>Sustainable Practice with Cellulose Filters</strong>
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/iro/sfy/aim/icons-7.png"
+                alt="Sustainability Icon" class="benefit-icon">
+            <strong>PRACTICE SUSTAINABILITY WITH CELLULOSE FILTERS</strong>
         </div>
-        <p>Our cellulose filters break down naturally, helping reduce emissions and promoting a more sustainable practice.</p>
+        <p>Our cellulose filters break down naturally, helping reduce emissions and promoting a more sustainable
+            practice.</p>
 
         <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/vd5/yvr/3ze/icons-8.png" alt="Streamline Icon" class="benefit-icon">
-            <strong>Streamline Your Labor Around the Fryer</strong>
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/vd5/yvr/3ze/icons-8.png"
+                alt="Streamline Icon" class="benefit-icon">
+            <strong>STREAMLINE LABOR AROUND THE FRYER</strong>
         </div>
-        <p>Using VITO is easy. Simply place the VITO unit in the fryer with its cellulose filter positioned inside, plug it in, and press the play button. The same filter can be used for multiple filtrations.</p>
+        <p>Using VITO is easy. Simply place the VITO unit in the fryer with its cellulose filter positioned inside, plug
+            it in, and
 
-        <h2>ATTEND OUR WEBINAR</h2>
-        <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/iaq/cvl/uqy/icons-9.png" alt="Date Icon" class="benefit-icon">
-            <strong>August 15th</strong>
-          
-        </div>
-        <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/atp/l0c/wte/icons-10.png" alt="Time Icon" class="benefit-icon">
-            <strong>5:00pm - 6:00pm EST</strong>
-            
-        </div>
-        <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/76q/2aj/sfw/icons-11.png" alt="Platform Icon" class="benefit-icon">
-            <strong>Connect on Zoom</strong>
-            
-        </div>
-        <div class="benefit-item">
-            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/znc/4qq/m37/icons-12.png" alt="Topic Icon" class="benefit-icon">
-            <strong>Topic: How to Start Saving Money with VITO in One Week</strong>
- 
-        </div>
-        <a href="https://zoom.us/j/1234567890" target="_blank" class="button-link left-aligned-button">Join the Webinar</a>
+            press the play button. The same filter can be used for multiple filtrations.</p>
 
-        <h2>EXCLUSIVE PRICING FOR OWNERS AND OPERATORS</h2>
+        <h2>WEBINAR DETAILS</h2>
         <div class="benefit-item">
-           
-            <p>Want to get started before the webinar? VITO offers exclusive pricing strictly for McDonald's Owners and Operators. You will not find a better deal on VITO anywhere else. Call us, email us, or chat with us on our website to redeem your exclusive offer on VITO filtration systems. Start saving money today and keep your liquid gold in pristine condition.</p>
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/iaq/cvl/uqy/icons-9.png" alt="Date Icon"
+                class="benefit-icon">
+            <strong>AUGUST 15TH</strong>
         </div>
-        
+        <div class="benefit-item">
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/atp/l0c/wte/icons-10.png" alt="Time Icon"
+                class="benefit-icon">
+            <strong>5PM - 6PM EST</strong>
+        </div>
+        <div class="benefit-item">
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/76q/2aj/sfw/icons-11.png"
+                alt="Platform Icon" class="benefit-icon">
+            <strong>CONNECT ON ZOOM</strong>
+        </div>
+        <div class="benefit-item">
+            <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/znc/4qq/m37/icons-12.png" alt="Topic Icon"
+                class="benefit-icon">
+            <strong>START SAVING MONEY IN ONE WEEK WITH VITO</strong>
+        </div>
+        <a href="https://zoom.us/j/1234567890" target="_blank" class="button-link left-aligned-button">ATTEND
+            WEBINAR</a>
+
+        <h2>EXCLUSIVE OWNER / OPERATOR PRICING</h2>
+        <div class="benefit-item">
+            <p>Want to get started before the webinar? VITO offers exclusive pricing strictly for McDonald's Owners and
+                Operators. You will not find a better deal on VITO anywhere else. Call us, email us, or chat with us on
+                our website to redeem your exclusive offer on VITO filtration systems. Start saving money today and keep
+                your liquid gold in pristine condition.</p>
+        </div>
+
         <div class="contact-buttons">
-            <a href="mailto:INFO@VITOFryfilter.com" class="button-link">Email Us</a>
-            <a href="tel:+18478590398" class="button-link">Call Us</a>
+            <a href="mailto:INFO@VITOFryfilter.com" class="button-link">EMAIL US</a>
+            <a href="tel:+18478590398" class="button-link">CALL US</a>
         </div>
     </div>
 </body>
