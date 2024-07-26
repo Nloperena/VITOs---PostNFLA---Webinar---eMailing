@@ -29,7 +29,20 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1,
+        h1 {
+            border-width: 8px;
+            border-style: solid;
+            border-radius: 1rem;
+            border-color: #fedc01;
+            padding: 2rem;
+            background-color: #000000;
+            font-size: 4rem;
+            font-weight: 900;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 8px 0px #000000;
+            transition: margin 0.3s ease, font-size 0.3s ease;
+        }
+
         h2 {
             border-width: 3px;
             border-style: solid;
@@ -42,20 +55,13 @@
             font-style: italic;
             color: rgb(0, 0, 0);
             box-shadow: 0 4px 0px #000000;
-            transition: margin 0.3s ease, font-size 0.3s ease;
+            transition: margin 0.3s ease, font-size 1200ms ease;
         }
 
-        h1:target,
-        h2:target {
+        h2:hover {
             margin-top: 1rem;
             margin-bottom: 1rem;
-            font-size: 3rem;
-        }
-
-        a.heading-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
+            font-size: 2.4rem;
         }
 
         .introduction-title {
@@ -73,7 +79,7 @@
         .button-link {
             background-color: white;
             color: #db0006;
-            font-size: 20px;
+            font-size: 1.1rem;
             border: 2px solid white;
             padding: 1rem;
             font-family: 'Poppins', sans-serif;
@@ -82,7 +88,7 @@
             border-radius: 40px;
             width: 50%;
             max-width: 220px;
-            transition: background-color 0.3s, border-color 0.3s, color 0.3s, padding 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s, padding 600ms, font-size 1200ms, width 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
             display: flex;
             margin: 3rem auto;
             text-decoration: none;
@@ -94,9 +100,11 @@
         .button-link:hover {
             background-color: #db0006;
             color: white;
+            font-size: 1.4rem;
             border-color: #db0006;
             padding: 2rem 0 2rem 0rem;
             box-shadow: 0 8px 0px #000000;
+            width: 60%;
         }
 
         .left-aligned-button {
@@ -106,9 +114,9 @@
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             line-height: 2.5rem;
-            margin: 1rem 2.5rem 0rem 2.5rem
+            margin: 1rem 2.5rem 0rem 2.5rem;
         }
 
         strong {
@@ -143,6 +151,15 @@
             max-width: 100%;
         }
 
+        button {
+            margin-top: 3rem;
+        }
+
+        div {
+            font-family: Poppins, Helvetica, sans-serif !important;
+            text-align: left !important;
+        }
+
         .footer {
             margin-top: 50px;
             padding-top: 20px;
@@ -167,10 +184,8 @@
             padding: 1rem 0;
             border-radius: 1rem;
             box-shadow: 0 4px 0px #000000;
-
             border-width: 3px;
             border-style: solid;
-            border-radius: 1rem;
             border-color: black;
             padding: 1rem;
             margin: 0 0 2rem 0;
@@ -219,21 +234,13 @@
             text-decoration: none;
         }
 
-        button {
-            margin-top: 3rem;
-        }
-
-        div {
-            font-family: Poppins, Helvetica, sans-serif !important;
-            text-align: left !important;
-        }
-
         .contact-wrapper {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: start;
         }
+
         .disclaimer {
             font-size: 1rem;
         }
@@ -245,7 +252,7 @@
         <a class="heading-link" id="start-saving">
             <h1 class="introduction-title">START SAVING IN YOUR FIRST WEEK WITH VITO</h1>
         </a>
-        <a href="https://zoom.us/j/1234567890" target="_blank">
+        <a href="https://us06web.zoom.us/webinar/register/WN_VhzxO-j-Td6to08M4xvg5A" target="_blank">
             <img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/bqgj1n1p/087/ji3/b1o/NOA-July-thumbnail.gif"
                 alt="Introduction Image" class="section-image" />
         </a>
@@ -259,8 +266,8 @@
                 August 15th from 5 to 6 PM. Don’t miss out on this opportunity to discover the best-kept secret to
                 improving your kitchen's margins. Designed, engineered, and assembled in Germany.</p>
         </div>
-        <a href="https://zoom.us/j/1234567890" target="_blank" class="button-link left-aligned-button">ATTEND
-            WEBINAR</a>
+        <a href="https://us06web.zoom.us/webinar/register/WN_VhzxO-j-Td6to08M4xvg5A" target="_blank"
+            class="button-link left-aligned-button">ATTEND WEBINAR</a>
 
         <a class="heading-link" id="save-costs">
             <h2>SAVE UP TO 30% IN COSTS</h2>
@@ -273,7 +280,7 @@
         </div>
         <a href="https://vitofryfilter.com/#calculator" target="_blank" class="button-link left-aligned-button">CHECK
             SAVINGS</a>
-
+        
         <a class="heading-link" id="benefits-vito">
             <h2>THE BENEFITS OF VITO</h2>
         </a>
@@ -306,6 +313,7 @@
         </div>
         <p>Using VITO is easy. Simply place the VITO unit in the fryer with its cellulose filter positioned inside, plug
             it in, and press the play button. The same filter can be used for multiple filtrations.</p>
+            <a href="https://mcd.vito.ag" target="_blank" class="button-link left-aligned-button">LEARN MORE</a>
 
         <a class="heading-link" id="webinar-details">
             <h2>WEBINAR DETAILS</h2>
@@ -330,8 +338,8 @@
                 class="benefit-icon">
             <strong>START SAVING MONEY IN ONE WEEK WITH VITO</strong>
         </div>
-        <a href="https://zoom.us/j/1234567890" target="_blank" class="button-link left-aligned-button">ATTEND
-            WEBINAR</a>
+        <a href="https://us06web.zoom.us/webinar/register/WN_VhzxO-j-Td6to08M4xvg5A" target="_blank"
+            class="button-link left-aligned-button">ATTEND WEBINAR</a>
 
         <a class="heading-link" id="exclusive-pricing">
             <h2>EXCLUSIVE OWNER/OPERATOR PRICING</h2>
@@ -412,15 +420,15 @@
                             +18478590398
                         </div>
                     </a>
-                    <p class = 'disclaimer'>VITO is a trademark of VITO AG, Germany.
+                    <p class='disclaimer'>VITO is a trademark of VITO AG, Germany.
                         All products are made in Germany and are used by over 50,000 customers.
-                        
+
                         If you do not wish to receive future VITO emails please contact us</p>
                 </div>
             </div>
-            
         </div>
     </div>
 </body>
+
 
 </html>
